@@ -4,7 +4,7 @@ class Solution:
         
         # METHOD: sliding window
         # if subarray 'good' -> expand window to right
-        # else -> shrink window from left so subarray is 'good' again
+        # else -> shrink window from left until subarray is 'good' again
     
         result = 0
         current = 0
@@ -18,7 +18,7 @@ class Solution:
             freqDict[x] +=1
             #print(x,freqDict[x], nums[left:right+1], current, result)
             
-            while freqDict[x] > k: # remove leftmost elements from subarray
+            while freqDict[x] > k: # remove leftmost elements from subarray until good
                 freqDict[nums[left]] -=1
                 current -=1
                 left +=1
