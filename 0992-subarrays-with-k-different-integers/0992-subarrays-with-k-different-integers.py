@@ -7,7 +7,7 @@ class Solution:
             # let u = # of unique ints in current window subarray
             # if u<k -> expand to right
             # if u>k -> shrink from left unitl u==k
-            # if u==k -> # good subarrays is len(window)+1
+            # if u==k -> # good subarrays is len(window)
         #
         # To find # subarrays with EXACTLY k unique ints:
         # (# with at most k) - (# with at most k-1)
