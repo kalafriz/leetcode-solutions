@@ -3,7 +3,6 @@ class Solution:
         
         deck.sort()
         result = []
-        start = 0
         
         # METHOD: Build the deck as it would be revealed.
         if len(deck) <=1:
